@@ -11,9 +11,10 @@
   </head>
 
   <body>
-
-  <%= link_to "Home", restaurants_path %>
-  <%= link_to "Create a new Restaurant", new_restaurant_path %>
+  <div class="header-div">
+    <%= link_to "Home", restaurants_path %>
+    <%= link_to "Create a new Restaurant", new_restaurant_path %>
+  </div>
 
     <%= yield %>
   </body>
