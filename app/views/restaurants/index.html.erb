@@ -1,2 +1,9 @@
-<h2>index page</h2>
-<%= @restaurants %>
+<h2>List of Restaurants</h2>
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li>
+      <%= link_to restaurant.name, restaurant_path(restaurant) %>
+    </li>
+    <% end %>
+</ul>
+
